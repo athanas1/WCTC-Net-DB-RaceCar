@@ -11,12 +11,17 @@ namespace RaceTrack.RaceTrack.Cars
         public NissanSkyline()
         {
             Name = "Nissan Skyline";
-            TopSpeed = 150;
+            TopSpeed = 110;
         }
 
         public override void StartEngine()
         {
             Console.WriteLine($"The {Name} roars to life!");
+        }
+
+        public override void StopEngine()
+        {
+            System.Console.WriteLine($"The {Name} engine dies down.\n");
         }
     }
 }

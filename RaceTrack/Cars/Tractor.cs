@@ -24,5 +24,9 @@ namespace RaceTrack.RaceTrack.Cars
             Console.WriteLine($"The {Name} is having a hard time stopping!");
             base.Brake();
         }
+        public override void StopEngine()
+        {
+            System.Console.WriteLine($"The {Name} engine dies down.\n");
+        }
     }
 }
